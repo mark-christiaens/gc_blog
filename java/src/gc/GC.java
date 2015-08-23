@@ -47,7 +47,7 @@ public class GC {
             int slot = i % elCount;
             elements[slot] = new byte[elSize];
             for (int j = 0; j < elSize; j++) {
-                elements[slot][j] = 1;
+                elements[slot][j] = (byte) i;
             }
         }
 
